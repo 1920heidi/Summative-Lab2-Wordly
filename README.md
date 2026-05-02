@@ -24,12 +24,16 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 - Free Dictionary API (https://dictionaryapi.dev/)
 - Web Audio API for pronunciation playback
 - LocalStorage API for data persistence
+- Github Pages to get website URL - https://1920heidi.github.io/Summative-Lab2-Wordly/
 
 ## How to Run
 1. Clone or download this repository - https://github.com/1920heidi/Summative-Lab2-Wordly
 2. Open `actual.html` in your web browser.
 3. Start interacting with the dictionary browser.
 
+# Deployement
+- Heidi's Website URL - Website URL - https://1920heidi.github.io/Summative-Lab2-Wordly/
+1. Click on the link to view the website
 
 ## Project Structure
 - `actual.html` — Main HTML file

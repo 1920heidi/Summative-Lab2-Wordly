@@ -340,43 +340,84 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
-  
   .search-container {
     flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 100%;
   }
-  
-  #wordInput {
+  #wInput {
     border-radius: 25px;
     margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
   }
-  
   button[type="submit"] {
     border-radius: 25px;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
   }
-  
   #result {
-    padding: 1.5rem;
-    margin: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1rem;
   }
-  
   #favoritesList {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .favorites-section, .search-section {
+    padding: 1rem 0.5rem;
+    margin: 1rem auto;
+    max-width: 98vw;
+  }
+  .favorite-word {
+    min-width: 0;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 0.2rem;
+  }
+  .results-section {
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
   }
 }
 
 @media (max-width: 480px) {
   main {
-    padding: 0 0.5rem;
+    padding: 0 0.2rem;
   }
-  
   header {
-    padding: 1rem 0.5rem;
+    padding: 0.7rem 0.2rem;
   }
-  
   h1 {
-    font-size: 2rem;
+    font-size: 1.3rem;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  .search-section, .favorites-section {
+    padding: 0.7rem 0.2rem;
+    margin: 0.5rem auto;
+    max-width: 99vw;
+  }
+  #wInput, button[type="submit"] {
+    font-size: 0.95rem;
+    padding: 0.7rem 0.7rem;
+  }
+  #result {
+    padding: 0.5rem;
+    margin: 0.2rem;
+    font-size: 0.95rem;
+  }
+  .favorite-word {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.1rem;
   }
 }
 
