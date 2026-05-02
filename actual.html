@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wordy Dictionary </title>
+        <link rel="stylesheet" href="actual.css">
+    </head>
+    <body>
+        <header>
+            <h1>Heidi's Dictionary Site</h1>
+            <p class="subtitle">Welcome to Heidi Temba's Dictionary site, the site is tailored to help new English learners and also the native speakers improve vocubulary! Just write the word you need to search on the search box and click search button to populate the answer. Noting that on this app we can now add words to favourites to revise them later.</p>
+        </header>
+        <main>
+    <section class="search-section">
+      <p class="search-description">Search words to get their meanings and pronunciation</p>
+      <form id="searchForm" role="search" aria-label="Word search">
+        <div class="search-container">
+          <label for="wInput" class="visually-hidden">Enter word to search</label>
+          <input 
+            type="text" 
+            id="wInput" 
+            placeholder="Enter a word you want to search..." 
+            required 
+            aria-describedby="searchHelp"
+            autocomplete="off"
+          >
+          <button type="submit" aria-label="Search">Search</button>
+        </div>
+      </form>
+    </section>
+    <section class="favorites-section">
+        <h2>Favorite Words</h2>
+        <div id="favoritesList" aria-label="List of favorite words"></div>
+        <button id="clearFavorites" class="btn-secondary">Clear All Favorites</button>
+    </section>
+    <section class="results-section">
+        <div id="error" role="alert" aria-live="polite"></div>
+        <div id="result" aria-live="polite"></div>
+    </section>
+    </main>
+        <footer id="footer">
+        <p>&copy; 2024 My Portfolio. All rights reserved <br> email: heidi.jeruto@student.moringaschool.com</p>
+        </footer>
+        <script src="actual.js"></script>
+    </body>
+</html>
