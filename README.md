@@ -1,35 +1,3 @@
-# Wordly Dictionary SPA
-
-## Overview
-Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and JavaScript. It allows users to search for English words, view their definitions, pronunciation, synonyms, and save favorite words for later review—all without reloading the page.
-
-## Features
-- **Search for Words:** Enter a word and fetch its definition, pronunciation, and synonyms from a public dictionary API.
-- **Favorites:** Save words to a favorites list for easy revision.
-- **Dynamic UI:** All updates happen instantly without page reloads.
-- **Error Handling:** User-friendly messages for invalid words or API errors.
-- **Responsive Design:** Works well on desktop and mobile devices.
-- **Accessible:** Uses ARIA labels and keyboard navigation for usability.
-
-## Technologies Used
-- HTML5
-- CSS3 (Flexbox, Grid, Animations)
-- JavaScript (Fetch API, DOM Manipulation, localStorage)
-
-## How to Run
-1. Clone or download this repository.
-2. Open `actual.html` in your web browser.
-3. Start searching for words and manage your favorites!
-
-## Project Structure
-- `actual.html` — Main HTML file
-- `actual.css` — Stylesheet
-- `actual.js` — JavaScript logic
-- `image/` — Background images
-
-## Credits
-- Dictionary API: [Free Dictionary API](https://dictionaryapi.dev/)
-- Developed by Heidi Temba
 
 # Wordly Dictionary SPA
 
@@ -134,7 +102,3 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 - Dictionary API: [Free Dictionary API](https://dictionaryapi.dev/)
 - Website URL: 
 
-## License
-This project is for educational purposes.
-
-# Summative-Lab2-Wordly
