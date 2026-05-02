@@ -28,7 +28,7 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 
 ## How to Run
 1. Clone or download this repository - https://github.com/1920heidi/Summative-Lab2-Wordly
-2. Open `actual.html` in your web browser.
+2. Open `index.html` in your web browser.
 3. Start interacting with the dictionary browser.
 
 # Deployement
@@ -36,10 +36,10 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 1. Click on the link to view the website
 
 ## Project Structure
-- `actual.html` — Main HTML file
+- `index.html` — Main HTML file
 - `actual.css` — Stylesheet
 - `actual.js` — JavaScript logic
-- `Image/` — Background image lives in this folder
+- `Images/` — Background image lives in this folder
 
 ## JavaScript Functionality
 
