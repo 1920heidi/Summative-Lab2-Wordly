@@ -103,3 +103,5 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 - Dictionary API: [Free Dictionary API](https://dictionaryapi.dev/)
 - Website URL: 
 
+### License
+Work by Heidi Jeruto as an assignment requirement
