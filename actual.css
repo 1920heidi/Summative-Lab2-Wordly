@@ -13,7 +13,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
-  background: url('image/alternative.avif') no-repeat center center fixed !important;
+  background: url('image/alternative.jpg') no-repeat center center fixed !important;
   background-size: cover !important;
   min-height: 100vh;
   display: flex;
