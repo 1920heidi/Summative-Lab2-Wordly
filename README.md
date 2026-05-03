@@ -5,17 +5,13 @@
 Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and JavaScript. It allows users to search for English words, view their definitions, pronunciation, synonyms, and save favorite words for later review.
 
 ## Features
-- **Search for Words:** Enter a word and fetch its definition, pronunciation, and synonyms from a public dictionary API.
-- **Favorites:** Save words to a favorites list for easy revision.
-- **Dynamic UI:** All updates happen instantly without page reloads.
-- **Error Handling:** User-friendly messages for invalid words or API errors.
+- **Search for Words:** Enter a word and click search.
+- **Favorites:** Save words to a favorites by clicking to Add to favourites you can also clear or remove a specific word.
+- **Dynamic UI:** Updates happen without page reloads.
+- **Error Handling:** Red and error for invalid words.
 - **Responsive Design:** Works well on desktop and mobile devices.
-- **Accessible:** Uses ARIA labels and keyboard navigation for usability.
 - **Audio Pronunciation:** Listen to word pronunciations when available from the API.
 - **Interactive Synonyms/Antonyms:** Click on synonyms and antonyms to instantly search them.
-- **Keyboard Shortcuts:** Quick navigation with Ctrl/Cmd+K and Escape key support.
-- **Offline Detection:** Automatic network status monitoring with user feedback.
-- **Screen Reader Support:** Built-in announcements for accessibility compliance.
 
 ## Technologies Used
 - HTML5
@@ -23,7 +19,6 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 - JavaScript (Fetch API, DOM Manipulation, localStorage)
 - Free Dictionary API (https://dictionaryapi.dev/)
 - Web Audio API for pronunciation playback
-- LocalStorage API for data persistence
 - Github Pages to get website URL - https://1920heidi.github.io/Summative-Lab2-Wordly/
 
 ## How to Run
@@ -49,6 +44,24 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 - **Event Handling**: Form submissions, click events, and keyboard navigation
 - **Data Persistence**: localStorage implementation for favorites management
 
+### Html webpage 
+- Divided into 3 sections 
+- Header
+- Body with 3 sections 
+    - Section 1 - Search section
+    - Section 2 - Favourites section
+    - Section 3 - Error handling section
+    - Footer
+
+### CSS features
+- Responsivity for Phones and Laptop layouts
+- Background image
+- Section styling
+- Hover over button feature
+- Search bar, button styling
+- Error handling styling
+- General styling of page
+
 #### Search & Display System
 ```javascript
 // Handles word lookup with validation and error management
@@ -67,41 +80,27 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 - Bulk operations (clear all with confirmation)
 ```
 
-#### Accessibility Implementation
-```javascript
-// Screen reader and keyboard navigation support
-- ARIA live regions for dynamic announcements
-- Keyboard shortcuts (Ctrl/Cmd+K, Escape)
-- Focus management and tabindex handling
-- Visual and auditory feedback for user actions
-```
-
 #### Audio Integration
 ```javascript
 // Pronunciation audio playback
 - HTML5 audio controls integration
-- Multiple audio format support (MP3, WAV)
+- Multiple audio format support (MP3)
 - Graceful fallback when audio unavailable
 ```
 
 #### Network & Error Handling
 ```javascript
 // Robust error management system
-- Online/offline status detection
 - API error handling with user-friendly messages
-- Input validation and sanitization
-- Graceful degradation for missing data
 ```
 
 ### Event Listeners & Interactions
 - **Search Form**: Submit handling with preventDefault
 - **Favorites**: Click handlers for add/remove/clear operations
-- **Keyboard Navigation**: Arrow keys, Enter, Space, and shortcuts
 - **Synonym/Antonym Links**: Dynamic word lookup on click
-- **Network Events**: Online/offline status monitoring
 
 - Dictionary API: [Free Dictionary API](https://dictionaryapi.dev/)
 - Website URL: 
 
 ### License
-Work by Heidi Jeruto as an assignment requirement
+Work by Heidi Jeruto as an assignment requirement 
