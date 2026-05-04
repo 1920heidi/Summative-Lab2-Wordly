@@ -26,7 +26,7 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 2. Open `index.html` in your web browser.
 3. Start interacting with the dictionary browser.
 
-# Deployement
+## Deployement
 - Heidi's Website URL - Website URL - https://1920heidi.github.io/Summative-Lab2-Wordly/
 1. Click on the link to view the website
 
