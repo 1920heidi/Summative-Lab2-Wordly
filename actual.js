@@ -233,7 +233,12 @@ function clearSavedWords() {
   if (confirm("Are you sure you want to clear all saved words?")) {
     savedWords = [];
     localStorage.setItem("heidiDictionary", JSON.stringify(savedWords));
+
     renderSavedWords();
+    // Refresh the result to update the button state if a word is displayed
+    if (lastResult) {
+      displayWord(lastResult);
+    }
 
   }
 }
