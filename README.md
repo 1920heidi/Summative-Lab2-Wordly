@@ -62,6 +62,8 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 - Error handling styling
 - General styling of page
 
+
+### Javascript Features
 #### Search & Display System
 ```javascript
 // Handles word lookup with validation and error management
@@ -99,6 +101,8 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 - **Favorites**: Click handlers for add/remove/clear operations
 - **Synonym/Antonym Links**: Dynamic word lookup on click
 
+
+### Links
 - Dictionary API: [Free Dictionary API](https://dictionaryapi.dev/)
 - Website URL: https://1920heidi.github.io/Summative-Lab2-Wordly/
 
