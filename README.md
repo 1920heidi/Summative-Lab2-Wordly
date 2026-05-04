@@ -36,8 +36,6 @@ Wordly Dictionary is a Single Page Application (SPA) built with HTML, CSS, and J
 - `actual.js` — JavaScript logic
 - `Images/` — Background image lives in this folder
 
-## JavaScript Functionality
-
 ### Core Features
 - **API Integration**: Asynchronous fetch requests to Dictionary API with error handling
 - **DOM Management**: Dynamic content rendering and real-time UI updates
