@@ -719,79 +719,22 @@ button.favorite-btn.favorited {
 .remove-favorite {
   background: none !important;
   border: none !important;
-  color: #111111 !important;
-  font-size: 0.85rem !important;
-  font-weight: bold !important;
-  cursor: pointer !important;
-  padding: 0 !important;
-  line-height: 1 !important;
-  border-radius: 0 !important;
-}
-
-.remove-favorite:hover {
   color: #e74c3c !important;
-  background: none !important;
-  transform: scale(1.2) !important;
+  font-size: 1.2rem !important;
+  cursor: pointer !important;
+  padding: 0.2rem !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  height: 25px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease !important;
 }
-#favoritesList {
-  justify-content: flex-start !important;
-  padding: 0 1rem !important;
-}
-/* Universal button hover effects */
-button {
-  transition: all 0.25s ease !important;
-}
-
-button:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3) !important;
-}
-
-button:active {
-  transform: translateY(0px) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-}
-
-/* Search button */
-button[type="submit"]:hover {
-  background: #1f86ed !important;
-  transform: translateY(-3px) !important;
-}
-
-/* Clear favourites button */
-#clearFavorites:hover {
+.remove-favorite:hover {
   background: #e74c3c !important;
-  border-color: #e74c3c !important;
-  transform: translateY(-3px) !important;
-}
-
-/* Add to favourites button */
-button.favorite-btn:hover {
-  background: #b6170c !important;
-  transform: translateY(-3px) !important;
-}
-
-/* Favourite word pills */
-.favorite-word:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25) !important;
-}
-
-/* Synonym tags */
-.synonym-tag {
-  transition: all 0.2s ease !important;
-  cursor: pointer !important;
-}
-
-.synonym-tag:hover {
-  transform: scale(1.08) !important;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4) !important;
-}
-
-/* Remove favourite X button */
-.remove-favorite:hover {
-  transform: scale(1.3) !important;
-  color: #e74c3c !important;
+  color: white !important;
+  transform: scale(1.1) !important;
 }
 .source-info {
   margin-top: 2rem;
@@ -799,16 +742,28 @@ button.favorite-btn:hover {
   border-top: 1px solid #eee;
   text-align: center;
 }
-
-.source-info a {
-  color: #667eea;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.source-info a:hover {
-  text-decoration: underline;
-}
 .source-info a {
   color: #ffffff !important;
+  text-decoration: none;
+}
+.source-info a:hover { text-decoration: underline; }
+
+/* Center pronunciation and audio controls */
+.word-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.word-header .pronunciation {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.word-header .audio-controls {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
 }

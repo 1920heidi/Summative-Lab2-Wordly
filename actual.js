@@ -165,7 +165,7 @@ function displayWord(wordData) {
 
   resultBox.innerHTML = html;
   resultBox.scrollIntoView({ behavior: "smooth", block: "start" });
-  announceToScreenReader(`Definition loaded for ${wordData.word}`);
+
 }
 
 // -- Saved words (favourites) --
@@ -174,10 +174,10 @@ function toggleSave(word) {
 
   if (index > -1) {
     savedWords.splice(index, 1);
-    announceToScreenReader(`${word} removed from favorites`);
+
   } else {
     savedWords.push(word);
-    announceToScreenReader(`${word} added to favorites`);
+
   }
 
   localStorage.setItem("heidiDictionary", JSON.stringify(savedWords));
@@ -234,7 +234,7 @@ function clearSavedWords() {
     savedWords = [];
     localStorage.setItem("heidiDictionary", JSON.stringify(savedWords));
     renderSavedWords();
-    announceToScreenReader("All saved words cleared");
+
   }
 }
 
@@ -264,16 +264,6 @@ function showLoading() {
     </div>`;
 }
 
-// -- Screen reader announcements --
-function announceToScreenReader(message) {
-  const liveRegion = document.createElement("div");
-  liveRegion.setAttribute("aria-live", "polite");
-  liveRegion.setAttribute("aria-atomic", "true");
-  liveRegion.className = "visually-hidden";
-  liveRegion.textContent = message;
-  document.body.appendChild(liveRegion);
-  setTimeout(() => document.body.removeChild(liveRegion), 1000);
-}
 
 // -- Network status --
 window.addEventListener("online", () => {
@@ -284,63 +274,3 @@ window.addEventListener("offline", () => {
   showError("No internet connection. Please check your network.");
 });
 
-// -- Keyboard shortcuts --
-document.addEventListener("keydown", (e) => {
-  // Ctrl/Cmd + K focuses the search input
-  if ((e.ctrlKey || e.metaKey) && e.key === "k") {
-    e.preventDefault();
-    wordInput.focus();
-    wordInput.select();
-  }
-  // Escape blurs or refocuses search
-  if (e.key === "Escape") {
-    document.activeElement === wordInput
-      ? wordInput.blur()
-      : wordInput.focus();
-  }
-});
-
-// -- Dynamic styles for JS-generated elements --
-const dynamicStyles = document.createElement("style");
-dynamicStyles.textContent = `
-  .word-header {
-    text-align: center;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-  }
-  .audio-controls { margin: 1rem 0; }
-  .definition-group { margin-bottom: 1.5rem; }
-  .remove-favorite {
-    background: none;
-    border: none;
-    color: #e74c3c;
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding: 0.2rem;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-  }
-  .remove-favorite:hover {
-    background: #e74c3c;
-    color: white;
-    transform: scale(1.1);
-  }
-  .source-info {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
-    text-align: center;
-  }
-  .source-info a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  .source-info a:hover { text-decoration: underline; }
-`;
-document.head.appendChild(dynamicStyles);
